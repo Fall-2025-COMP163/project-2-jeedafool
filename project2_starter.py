@@ -5,7 +5,7 @@ Date: [11-14-25]
 
 AI Usage: AI helped with implementation of methods in all classes, ensuring correct use of inheritance (super()) and polymorphism (method overriding).
 """
-
+#asked Gemini to debugg what was wrong with the first test case
 
 # ============================================================================
 # PROVIDED BATTLE SYSTEM (DO NOT MODIFY)
@@ -249,7 +249,6 @@ if __name__ == "__main__":
     print("=" * 50)
 
     # Create one of each character type
-    # names from anime frieren
     warrior = Warrior("Himmel")
     mage = Mage("Frieren")
     rogue = Rogue("Eisen")
@@ -285,7 +284,7 @@ if __name__ == "__main__":
     print("\n🗡️ Testing Weapon Composition:")
     sword = Weapon("Iron Sword", 10)
     staff = Weapon("Magic Staff", 15)
-    dagger = Weapon("Steel Dagger", 8)
+    dagger = Weapon("Steel Dagger", 8) 
 
     sword.display_info()
     staff.display_info()
@@ -294,8 +293,8 @@ if __name__ == "__main__":
     # Test the battle system
     print("\n⚔️ Testing Simple Battle System (Warrior vs Mage):")
     # Reset characters for a fresh fight
-    warrior_battle = Warrior("Himmel")
-    mage_battle = Mage("Frieren")
+    warrior_battle = Warrior("Himmel") 
+    mage_battle = Mage("Frieren")    
     battle = SimpleBattle(warrior_battle, mage_battle)
     battle.fight()
 
